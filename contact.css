@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* style for main section  */
+.contact-main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+html[lang='ar'] .contact-main-section .section1-contact {
+    flex-direction: row-reverse;
+}
+
+.contact-main-section .section1-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-main-section .section1-contact>div {
+    width: 47%;
+}
+html[lang='ar'] .contact-main-section .section1-contact .left-contacts1{direction: rtl;}
+.contact-main-section .section1-contact .left-contacts1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-transform: capitalize;
+}
+
+.left-contacts1 h6 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.left-contacts1 h2 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.left-contacts1 span {
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+.left-contacts1 ul,
+.section2-right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+    text-transform: capitalize;
+
+}
+
+.left-contacts1 ul li i {
+    margin:0 10px;
+}
+
+.reight-contacts1 iframe {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    height: 400px;
+}
+
+.section2-contact {
+    width: 100%;
+    border: 0.5px solid rgb(127, 127, 127);
+    padding: 20px;
+
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.section2-contact .s p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(42, 42, 42);
+    opacity: 0.5;
+}
+
+.section2-contact div:first-child h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(42, 42, 42);
+    opacity: 0.9;
+}
+
+html[lang='ar'] .section2-contact .contenat-contact {
+    flex-direction: row-reverse;
+}
+
+.section2-contact .contenat-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2-contact .contenat-contact .section2-left {
+    width: 70%;
+}
+
+.section2-contact .contenat-contact .section2-left form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+html[lang='ar'] .section2-contact .contenat-contact .section2-left form input,
+textarea {
+    direction: rtl;
+}
+
+.section2-contact .contenat-contact .section2-left form input,
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 5px;
+    border: 0.5px solid #aaa;
+    outline: none;
+}
+
+html[lang='ar'] .section2-contact .contenat-contact .section2-right {
+    align-items: end;
+}
+
+.section2-contact .contenat-contact .section2-right {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.section2-right ul li {
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.5;
+}
+
+.nnnn,
+.section2-right p {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.section2-right p::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(  1.png);
+    background-size: cover;
+}
+
+.section2-right .tow-div p::before {
+    background-image: url(  2.png);
+}
+
+.section2-right .three-div p::before {
+    background-image: url(  3.png);
+}
+
+
+/*  end style for main section  */
+
+/* srart medai screen  */
+@media(max-width:900px) {
+    .section2-contact .contenat-contact .section2-left {
+        width: 60%;
+    }
+
+    .section2-contact .contenat-contact .section2-right {
+        width: 36%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*mobaile*/
+@media(max-width:700px) {
+    .contact-main-section .section1-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-main-section .section1-contact>div {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .section2-contact .contenat-contact {
+        flex-direction: column;
+    }
+
+    .section2-contact .contenat-contact .section2-left {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .section2-contact .contenat-contact .section2-right {
+        width: 100%;
+        padding: 0 5px;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+/* end medai screen  */

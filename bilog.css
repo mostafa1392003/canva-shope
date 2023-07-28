@@ -1,0 +1,281 @@
+/* start header*/
+.bilogHader {
+    width: 100%;
+
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+html[lang='ar'] .contener-shop {
+    direction: rtl;
+}
+
+.contener-shop {
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.contener-shop h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contener-shop p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* end header*/
+/* start search sction  */
+.only-word {
+    background-color: white;
+    position: relative;
+    top: 13px;
+    left: 20px;
+    width: max-content;
+    direction: inherit;
+
+}
+
+.category-div {
+    padding: 15px 5px 5px 5px;
+    border: solid 1px #444;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    direction: inherit;
+
+}
+
+.category-div>div {
+    width: 40%;
+}
+
+.category-div>div label {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    direction: inherit;
+    cursor: pointer;
+
+}
+
+.category-div>div label:hover {
+    color: #4CAF50;
+}
+
+.search-blog {
+    position: fixed;
+    right: -350px;
+    top: 100px;
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 666;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0 0 14px 1px #939393;
+}
+
+.search-blog>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-blog .search-logo {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: -50px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-color: #fff;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    cursor: pointer;
+
+}
+
+.search-blog input[type="text"] {
+    outline: none;
+    border: 0.5px solid #555;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    height: 30px;
+    width: 90%;
+    margin: 10px auto 0;
+}
+
+.search-blog input[type="text"]:focus {
+    border: none;
+    box-shadow: 0 0 4px 3px #03A9F4;
+}
+
+/* end search sction  */
+/* start search section  */
+
+/*satrt body*/
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.bgc {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.bgc .bilog-left {
+    width: 35%;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.bgc .bilog-left span {
+    position: absolute;
+    top: -49px;
+    left: 0;
+    font-size: 55px;
+    font-weight: 800;
+    opacity: 0.2;
+    z-index: 55;
+
+}
+
+.bilog-one .bilog-left {
+    background-image: url(../);
+}
+
+.bilog-tow .bilog-left {
+    background-image: url(  blog2.jpg);
+}
+
+.bilog-three .bilog-left {
+    background-image: url(  blog3.jpg);
+}
+
+.bilog-four .bilog-left {
+    background-image: url(  blog4.jpg);
+}
+
+.bilog-five .bilog-left {
+    background-image: url(  blog5.jpg);
+}
+
+.bgc .bilog-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+html[lang='ar'] .bgc .bilog-right div {
+    direction: rtl;
+}
+
+.bgc .bilog-right div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-transform: capitalize;
+}
+
+.bgc .bilog-right div h2 {
+    font-size: 25px;
+    font-weight: bold;
+    direction: inherit;
+}
+
+.bgc .bilog-right div span {
+    font-size: 16px;
+    color: rgba(49, 49, 49, 0.684);
+    direction: inherit;
+}
+
+.bgc .bilog-right div p a {
+    font-size: 21px;
+    font-weight: 700;
+    direction: inherit;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.bgc .bilog-right div p a:hover {
+    color: #4CAF50;
+}
+
+/*end*/
+/* start  media*/
+@media (max-width:600px) {
+    .contener-shop {
+        width: 90%;
+    }
+
+    .bgc {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .bgc .bilog-left {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .bgc .bilog-right {
+        width: 100%;
+        padding: 0 5px;
+        margin: 8px 0;
+    }
+}
+
+/* end  media*/

@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html[lang="ar"] .perant {
+    direction: rtl !important;
+}
+
+.perant {
+    margin-top: 120px;
+    padding: 20px;
+    display: flex;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    direction: ltr;
+}
+
+table {
+    direction: inherit;
+}
+
+table tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #aaa;
+    direction: inherit;
+}
+
+table tr td {
+    width: 24.5%;
+    direction: inherit;
+}
+
+
+
+td img {
+    width: 100%;
+}
+
+.text-center {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.product-name,
+.Size,
+.color {
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.Quantity input {
+    width: 70px;
+    border: 0.5px solid #a1a1a1;
+    outline: none;
+    caret-color: transparent;
+}
+
+/********/
+aside {
+    border-radius: 0 0 30px 30px;
+    padding: 20px;
+    background-color: rgb(230, 243, 254);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    -webkit-border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -ms-border-radius: 0 0 30px 30px;
+    -o-border-radius: 0 0 30px 30px;
+    text-transform: capitalize;
+    direction: inherit;
+
+}
+aside .top label{
+    font-weight: 300;
+    font-size: 17px;
+}
+aside::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+
+    background-image: linear-gradient(to right, #03A9F4 20%, #00BCD4 20%, #00BCD4 40%, #8BC34A 40%, #8BC34A 60%, #FFC107 60%, #FFC107 80%, #F44336 80%);
+    top: 0px;
+    left: 0;
+}
+
+aside .bottom p {
+    font-size: 35px;
+    font-weight: 500;
+    direction: inherit;
+    text-align: center;
+}
+
+aside .bottom div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+    padding: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: 400;
+    direction: inherit;
+
+}
+
+aside button {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    direction: inherit;
+}
+
+.check-out-ptn{
+    width: 80%;
+    margin: 10px 10%;
+
+}
+@media (max-width:920px) {}
+
+@media (max-width:720px) {
+    .perant {
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+
+    }
+
+    main table td {
+        font-size: 20px !important;
+        font-weight: 300 !important;
+        width: 20%;
+
+    }
+
+    main table tr td:first-of-type,
+    main table tr td:nth-child(2) {
+        width: 30% !important;
+    }
+
+    .perant main,
+    .perant aside {
+        width: 100%;
+
+    }
+}

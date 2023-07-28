@@ -1,0 +1,143 @@
+/* start header*/
+.bilogHader {
+    width: 100%;
+    background-image: url(  aboutH.png);
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.contener-shop {
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+html[lang='ar'] .contener-shop h1,
+html[lang='ar'] .contener-shop p {
+    direction: rtl;
+}
+
+.contener-shop h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contener-shop p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* end header*/
+
+
+/*section one in main */
+.section-about-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-about-1>div {
+    width: 48%;
+}
+
+.about-left {
+    height: 400px;
+
+    background-size: cover;
+}
+
+html[lang='ar'] .right-content {
+    direction: rtl;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.right-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.right-content span {
+    font-size: 16px;
+    color: rgba(70, 70, 70, 0.648);
+    font-weight: 400;
+}
+
+.about-right {
+    display: flex;
+    align-items: center;
+}
+
+.section-about-2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.secion2-con {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.secion2-con h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.secion2-con h2 span {
+    color: #03A9F4;
+}
+
+video {
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+/*end the page*/
+/*start media screen */
+@media (max-width:770px) {
+    .section-about-1 {
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .section-about-1>div {
+        width: 100%;
+        background-size: contain;
+        height: 259px;
+    }
+
+    video {
+        width: 100%;
+
+    }
+}
+
+/*end media screen*/

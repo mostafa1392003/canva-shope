@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <link rel="stylesheet" href=" animate.css" />
+    <link rel="stylesheet" href=" all.min.css" />
+    <link rel="stylesheet" href=" bootstrap.min.css" />
+    <link rel="stylesheet" href=" nav.css" />
+    <link rel="stylesheet" href=" style.css" />
+    <link rel="stylesheet" href=" footer.css" />
+    <link rel="stylesheet" href=" checkOut.css" />
+    <style>
+      .navToggel ul a {
+        color: #000 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <div class="container">
+      <section class="row col-12 justify-content-center">
+        <nav class="col-8 navBar">
+          <div class="logo">
+            <a href="index.html"><img src=" logo.png" /></a>
+          </div>
+          <section class="activen navToggel" id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">shop</a></li>
+              <li><a href="bilog.html">blog</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li>
+                <a href="#" class="activeLi" style="position: relative"
+                  ><i class="fa-solid fa-basket-shopping"></i>
+                  <span class="conter"></span
+                ></a>
+              </li>
+            </ul>
+            <button class="icon" id="toggle">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+            </button>
+          </section>
+        </nav>
+      </section>
+    </div>
+    <!-- end navbar -->
+
+    <!-- start body section  -->
+    <section class="perant container">
+      <main class="col-lg-8">
+        <table class="col-12">
+          <tr class="me-2">
+            <td class="text-light bg-primary text-center">product</td>
+            <td class="text-light bg-primary text-center">specification</td>
+            <td class="text-light bg-primary text-center">price</td>
+            <td class="text-light bg-primary text-center">Quantity</td>
+          </tr>
+          <tr>
+            <td><img src=" pro_sec2_1.jpg" /></td>
+            <td>
+              <p class="text-primary product-name">product name</p>
+              <p class="Size text-danger">
+                Size:<span class="text-uppercase ms-2 text-dark">lg</span>
+              </p>
+              <p class="color text-danger">
+                color:
+                <span class="text-capitaliz0e ms-2 text-dark">black</span>
+              </p>
+            </td>
+            <td
+              class="price text-center d-flex justify-content-center align-items-center"
+            >
+              <span>50</span>$
+            </td>
+            <td
+              class="Quantity text-center d-flex justify-content-center align-items-center"
+            >
+              <input type="number" name="Quantity" id="" value="1" />
+            </td>
+          </tr>
+          <tr>
+            <td><img src=" pro_sec2_1.jpg" /></td>
+            <td>
+              <p class="text-primary product-name">product name</p>
+              <p class="Size text-danger">
+                Size:<span class="text-uppercase ms-2 text-dark">lg</span>
+              </p>
+              <p class="color text-danger">
+                color:
+                <span class="text-capitaliz0e ms-2 text-dark">black</span>
+              </p>
+            </td>
+            <td
+              class="price text-center d-flex justify-content-center align-items-center"
+            >
+              <span>40</span>$
+            </td>
+            <td
+              class="Quantity text-center d-flex justify-content-center align-items-center"
+            >
+              <input type="number" name="Quantity" id="" value="1" />
+            </td>
+          </tr>
+          <tr>
+            <td><img src=" pro_sec2_1.jpg" /></td>
+            <td>
+              <p class="text-primary product-name">product name</p>
+              <p class="Size text-danger">
+                Size:<span class="text-uppercase ms-2 text-dark">lg</span>
+              </p>
+              <p class="color text-danger">
+                color:
+                <span class="text-capitaliz0e ms-2 text-dark">black</span>
+              </p>
+            </td>
+            <td
+              class="price text-center d-flex justify-content-center align-items-center"
+            >
+              <span>120</span>$
+            </td>
+            <td
+              class="Quantity text-center d-flex justify-content-center align-items-center"
+            >
+              <input type="number" name="Quantity" id="" value="1" />
+            </td>
+          </tr>
+          <tr>
+            <td><img src=" pro_sec2_1.jpg" /></td>
+            <td>
+              <p class="text-primary product-name">product name</p>
+              <p class="Size text-danger">
+                Size:<span class="text-uppercase ms-2 text-dark">lg</span>
+              </p>
+              <p class="color text-danger">
+                color:
+                <span class="text-capitaliz0e ms-2 text-dark">black</span>
+              </p>
+            </td>
+            <td
+              class="price text-center d-flex justify-content-center align-items-center"
+            >
+              <span>120</span>$
+            </td>
+            <td
+              class="Quantity text-center d-flex justify-content-center align-items-center"
+            >
+              <input type="number" name="Quantity" id="" value="1" />
+            </td>
+          </tr>
+        </table>
+      </main>
+      <aside class="col-lg-4">
+        <div class="top col-12">
+          <form action="" method="">
+            <h2>Customer Information</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter address">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+              </div>
+          </form>
+        </div>
+        <div class="bottom col-12">
+        <p>summary</p>
+        <div>
+          <span>subtotal</span><span>$<span class="subTotal">20</span></span>
+        </div>
+        <div>
+          <span>discont</span><span>$<span class="discount">50</span></span>
+        </div>
+        <div>
+          <span>shipping</span><span>$<span class="shipping">10</span></span>
+        </div>
+        <div>
+          <span>total</span><span>$<span class="total">20</span></span>
+        </div>
+        <button class="btn btn-primary check-out-ptn">checkout</button>
+      </div>
+      </aside>
+    </section>
+    <!-- end  body section  -->
+
+    <!-- start footer -->
+    <footer>
+      <!-- start  section Tow one footer  -->
+
+      <section class="section2">
+        <div class="footer-logo">
+          <a href="index.html"> <img src=" logo.png" /></a>
+        </div>
+        <div class="footer-contaner-s2">
+          <div class="foot-One foot-all">
+            <p>contact</p>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="bold">
+                <span>follow us</span>
+                <span class="Social-media-icons">
+                  <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i> </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="foot-Tow foot-all">
+            <p>about</p>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+          </div>
+          <div class="foot-Three foot-all">
+            <p>my account</p>
+            <ul>
+              <li><a href="#">hello</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+          </div>
+          <div class="foot-Four foot-all">
+            <p>install app</p>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="imageApp">
+                <a href="#"><img src=" app.jpg" alt="" /></a>
+              </li>
+
+              <li><a href="#"> Lorem ipsum dolor sit amet.</a></li>
+              <li class="imageApp">
+                <a href="#"><img src=" sasa.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end  section one in footer  -->
+    </footer>
+    <!-- end  footer -->
+    <script src="  jquery.js"></script>
+    <script src="  bootstrap.bundle.min.js"></script>
+    <script src="  nav.js"></script>
+    <script src="  checkOut.js"></script>
+  </body>
+</html>

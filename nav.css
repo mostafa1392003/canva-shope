@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* start nav bar */
+:root {
+  --mainColor: #359538;
+
+}
+html[lang='ar'] .navBar{
+
+direction: rtl;
+}
+.navBar {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 72px;
+    box-shadow: 0px 3px 20px -5px #d2d2d2;
+    padding: 0;
+    z-index: 9999999999;
+  }
+  
+  .navToggel {
+    background-color: #ffffff00;
+    padding: 20px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: width 0.6s linear;
+  }
+  
+  .navToggel.activen {
+    width: 440px;
+    border: 1px 5px 10px 20px;
+  }
+  
+  .navToggel ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+    overflow-x: hidden;
+  }
+  
+  .navToggel.activen ul {
+    width: 100%;
+  }
+  
+  .navToggel ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+  
+  .navToggel.activen ul li {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+  
+  nav .logo {
+    width: 100px;
+  }
+  
+  nav .logo img {
+    width: 100%;
+  }
+  
+  .navToggel ul a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+  .navToggel ul a.activeLi,
+  .navToggel ul a:hover {
+    color: var(--mainColor) !important;
+    font-weight: 400;
+
+}
+  
+  .navToggel .icon {
+    background-color: #ffffff00;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .navToggel .icon:focus {
+    outline: 0;
+  }
+  
+  .navToggel .icon .line {
+    background-color: var(--mainColor);
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+  }
+  
+  .navToggel .icon .line2 {
+    top: auto;
+    bottom: 10px;
+  }
+  
+  .navToggel.activen .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+  }
+  
+  .navToggel.activen .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+  }
+  
+  @media (max-width:600px) {
+    .navBar {
+      width: 100%;
+      left: 0;
+      top: 0;
+      height: 50.4px;
+  
+    }
+  
+    nav .logo {
+      width: 70px;
+    }
+  
+    .navToggel {
+      padding: 9px;
+      font-size: 12px !important;
+    }
+  
+    .navToggel.activen {
+      width: 76%;
+    }
+  
+    .navToggel ul a {
+      margin: 0 5px;
+    }
+  
+  }
+  
+  /* end nav bar */

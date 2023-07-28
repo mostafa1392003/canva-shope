@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <link rel="stylesheet" href=" animate.css" />
+    <link rel="stylesheet" href=" all.min.css" />
+    <link rel="stylesheet" href=" bootstrap.min.css" />
+    <link rel="stylesheet" href=" stor.css" />
+    <link rel="stylesheet" href=" nav.css" />
+    <link rel="stylesheet" href=" style.css" />
+    <link rel="stylesheet" href=" footer.css" />
+    <style>
+      .navToggel ul a {
+        color: #000 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <div class="container">
+      <section class="row col-12 justify-content-center">
+        <nav class="col-8 navBar">
+          <div class="logo">
+            <a href="index.html"><img src=" logo.png" /></a>
+          </div>
+          <section class="activen navToggel" id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">shop</a></li>
+              <li><a href="bilog.html">blog</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li>
+                <a href="#" class="activeLi" style="position: relative"
+                  ><i class="fa-solid fa-basket-shopping"></i>
+                  <span class="conter"></span
+                ></a>
+              </li>
+            </ul>
+            <button class="icon" id="toggle">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+            </button>
+          </section>
+        </nav>
+      </section>
+    </div>
+    <!-- end navbar -->
+    <!-- start main section  -->
+    <div class="container mt-5 stor">
+      <table>
+        <tr>
+          <th>image</th>
+          <th>name</th>
+          <th>price</th>
+          <th>Quantity</th>
+          <th>delet</th>
+        </tr>
+        <tr>
+          <td><img src="pro_sec2_1.jpg" alt="" /></td>
+          <td>T-shirt</td>
+          <td>2000</td>
+          <td>
+            <span class="quty-number">1</span>
+            <span class="Quantity"
+              ><button class="plus">+</button
+              ><button class="miuns">-</button></span
+            >
+          </td>
+          <td>
+            <button class="btn btn-dark" onclick="delet(i)">delet</button>
+          </td>
+        </tr>
+      </table>
+      <div class="bluttons-chart">
+        <a href="shop.html">
+          <button class="btn btn-danger text-light">
+            <i class="fa-solid fa-cart-shopping ms-2"></i> Continue shopping
+          </button></a
+        >
+        <a href="checkOut.html"
+          ><button class="btn btn-success text-light">checkout</button></a
+        >
+      </div>
+    </div>
+    <div class="popap">
+      <div class="popap-contener">
+        <div class="successful">
+          <p>successful</p>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-dark closeBtn">close</button>
+        </div>
+      </div>
+    </div>
+    <!-- end main section  -->
+
+    <!-- start footer -->
+    <footer>
+      <!-- start  section Tow one footer  -->
+
+      <section class="section2">
+        <div class="footer-logo">
+          <a href="index.html"> <img src="logo.png" /></a>
+        </div>
+        <div class="footer-contaner-s2">
+          <div class="foot-One foot-all">
+            <p>contact</p>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="bold">
+                <span>follow us</span>
+                <span class="Social-media-icons">
+                  <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i> </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="foot-Tow foot-all">
+            <p>about</p>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+          </div>
+          <div class="foot-Three foot-all">
+            <p>my account</p>
+            <ul>
+              <li><a href="#">hello</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+          </div>
+          <div class="foot-Four foot-all">
+            <p>install app</p>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="imageApp">
+                <a href="#"><img src="app.jpg" alt="" /></a>
+              </li>
+
+              <li><a href="#"> Lorem ipsum dolor sit amet.</a></li>
+              <li class="imageApp">
+                <a href="#"><img src="sasa.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end  section one in footer  -->
+    </footer>
+    <!-- end  footer -->
+    <script src="jquery.js"></script>
+    <script src="nav.js"></script>
+    <script src="wow.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="  stor.js"></script>
+    <script src="  main.js"></script>
+    <script src="  bootstrap.bundle.min.js"></script>
+    <script src="  all.min.js"></script>
+  </body>
+</html>

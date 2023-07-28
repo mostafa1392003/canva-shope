@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start header*/
+
+.bilogHader {
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+html[lang='ar'] .contener-shop {
+    direction: rtl;
+}
+
+.contener-shop {
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.contener-shop h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contener-shop p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* end header*/
+/*post style*/
+html[lang="ar"]  .post{
+    direction: rtl !important;
+}
+.post{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+direction: ltr;
+}
+.Post-title{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+direction: inherit;
+
+}
+.post-body{
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    direction: inherit;
+}
+.imge-contaner {
+    height: 250px;
+      margin: 20px 0 ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; 
+    overflow: hidden;
+}
+.imge-contaner img{
+    width: 100%;
+ 
+}
